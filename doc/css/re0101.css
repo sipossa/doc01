@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html{font-size:20px;}
+body {font-family:'Noto Sans KR';}
+
+.container{width:60rem; margin:0 auto;}
+.container:after{content:""; clear:both; display:block;}
+
+#wrap {min-width:60rem;}
+
+header h1 {text-align:center;padding:0.5rem 0;}
+nav {border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+nav>ul {font-size:0;text-align:center;}
+nav>ul>li {display:inline-block;font-size:0.8rem;border-right:1px solid #ddd;position:relative;}
+nav>ul>li:last-child {border-right:none;}
+nav>ul>li>a {line-height:2rem;padding:0 2rem;}
+
+nav>ul>li .submenu {display:none;background:#fff;position:absolute;top:2rem;left:50%;transform:translateX(-50%);width:7.5rem;border:1px solid #ddd;z-index:999;}
+nav>ul>li:hover .submenu {display:block;}
+nav>ul>li .submenu:before {content:"";display:block;width:1rem;height:1rem;background:#fff;border:1px solid #ddd;position:absolute;top:-0.3rem;left:50%;transform:translateX(-50%) rotate(45deg);}
+nav>ul>li .submenu li {line-height:1.5rem;border-bottom:1px solid #ddd;position:relative;background:#fff;}
+
+#visual {position:relative;}
+#visual .visual-slider {background:#333;}
+#visual figure {height:20rem;}
+#visual .visual-item01 {background:url(../img/main_visual01.jpg) no-repeat center center/cover}
+#visual .visual-item02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover}
+#visual .visual-item03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover}
+#visual .slogan {position:absolute;top:10rem;left:50%;transform:translateX(-50%);width:60rem;padding:0 0.75rem;color:#fff;}
+
+#visual .slogan h2 {font-size:2rem;font-weight:700;margin-bottom:0.5rem;}
+#visual .slogan p {font-size:0.7rem;font-weight:300;}
+
+
+.section {padding:5rem 0;text-align:center;}
+.section h2 {font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;}
+.section p {font-size:0.7rem;font-weight:300;margin-bottom:1rem;}
+.section figure img {width:100%;}
+
+#content figure {float:left;width:33.3333333%;padding:0 0.75rem;}
+#content figure .case {overflow:hidden;margin-bottom:1rem;}
+#content figure img {transition:0.5s}
+#content figure:hover img {transform:scale(1.2)}
+#content figure span {display:block;margin-bottom:0.5rem;}
+#content figure a {display:block;border:1px solid #333;line-height:1.5rem;width:7.5rem;margin:0 auto;border-radius:0.2rem;}
+#content figure a:hover {background:#333;color:#fff;}
+#fixed-bg {background:url(../img/main_visual01.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;filter:grayscale(1)}
+
+#event {background:#f2f2f2;}
+#event figure {float:left;width:50%;padding:0 0.75rem;}
+
+
+#footer {padding:2rem 0;border-top:1px solid #ddd;text-align:center;}
+
+.mopen {display:none;position:fixed;top:2rem;right:2rem;font-size:3rem;z-index:1001;}
+.mopen i {background:#fff;}
+
+/*
+-----------------------------------------------------
+
+@media 768px 이하 ipad 대응
+
+--------------------------------------------------------
+*/
+
+
+@media (max-width:768px) {
+    html{font-size:10px;}
+    body {font-family:'Noto Sans KR';}
+
+    .container{width:100%; margin:0 auto;}
+    .container:after{content:""; clear:both; display:block;}
+
+    #wrap {min-width:0;}
+
+    header h1 {text-align:left;padding:1.2rem 2rem;}
+    header h1 img {width:10rem;}
+
+
+    nav {position:fixed;top:0;left:-100%;background:#fff;width:calc(100% - 90px);height:100vh;border-top:none;border-bottom:none;border-right:1px solid #333;padding:5rem 2rem 0 2rem;transition:0.3s;z-index:999;}
+    nav.on {left:0;}
+
+
+
+    nav>ul {font-size:0;text-align:center;}
+    nav>ul>li {display:block;font-size:1.8rem;border-right:none;border-bottom:1px solid #ddd;position:relative;}
+    nav>ul>li:last-child {border-right:none;}
+    nav>ul>li>a {line-height:4rem;padding:0 2rem;}
+
+    nav>ul>li .submenu {background:#fff;position:static;top:2rem;left:50%;transform:translateX(0);width:100%;border:none;z-index:999;}
+    nav>ul>li:hover .submenu {display:none;}
+    nav>ul>li .submenu:before {content:"";display:none;width:1rem;height:1rem;background:#fff;border:1px solid #ddd;position:absolute;top:-0.3rem;left:50%;transform:translateX(-50%) rotate(45deg);}
+    nav>ul>li .submenu li {line-height:3rem;border-bottom:1px solid #ddd;position:relative;background:#f2f2f2;}
+
+    #visual {position:relative;}
+    #visual .visual-slider {background:#333;}
+    #visual figure {height:40rem;}
+    #visual .visual-item01 {background:url(../img/main_visual01.jpg) no-repeat center center/cover}
+    #visual .visual-item02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover}
+    #visual .visual-item03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover}
+    #visual .slogan {position:absolute;top:20rem;left:50%;transform:translateX(-50%);width:100%;padding:0 0.75rem;color:#fff;text-align:center;}
+
+    #visual .slogan h2 {font-size:4rem;font-weight:700;margin-bottom:0.5rem;}
+    #visual .slogan p {font-size:1.4rem;font-weight:300;}
+
+
+    .section {padding:5rem 0;text-align:center;}
+    .section h2 {font-size:3rem;font-weight:700;margin-bottom:0.5rem;}
+    .section p {font-size:1.2rem;font-weight:300;margin-bottom:1rem;}
+    .section figure img {width:100%;}
+
+    #content figure {float:left;width:100%;padding:0.75rem 0.75rem;}
+    #content figure .case {overflow:hidden;margin-bottom:1rem;}
+    #content figure img {transition:0.5s}
+    #content figure:hover img {transform:scale(1.2)}
+    #content figure span {display:block;margin-bottom:0.5rem;}
+    #content figure a {display:block;border:1px solid #333;line-height:1.5rem;width:7.5rem;margin:0 auto;border-radius:0.2rem;}
+    #content figure a:hover {background:#333;color:#fff;}
+    #fixed-bg {background:url(../img/main_visual01.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;filter:grayscale(1)}
+
+    #event {background:#f2f2f2;}
+    #event figure {float:left;width:100%;padding:0.75rem 0.75rem;}
+
+
+    #footer {padding:2rem 0;border-top:1px solid #ddd;text-align:center;}
+    .mopen {display:block;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

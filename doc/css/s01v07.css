@@ -1,0 +1,88 @@
+#wrap {min-width:1200px;}
+
+header .top-banner {background:#333;color:#fff;font-size:0.7rem;font-weight:300;line-height:2rem;}
+header .top-banner>div {padding:0 0.75rem;position:relative;}
+header .top-banner i {position:absolute;top:0.5rem;right:0.75rem;cursor:pointer;padding:0.25rem;background:#666;}
+
+nav {position:relative;}
+nav>div {padding:0 0.75rem;}
+nav h1{float:left;width:20%;line-height:5rem;}
+nav .gnb-menu {float:left;width:70%;font-size:0;text-align:right;}
+nav .gnb-sns {float:right;font-size:0;text-align:right;}
+nav .gnb-menu>li {display:inline-block;font-size:0.8rem;position:relative;}
+nav .gnb-menu>li>a {display:block;padding:0 1.5rem;line-height:5rem;position:relative;}
+nav .gnb-menu>li>a:after {content:"";display:block;width:1px;height:12px;background:#999;position:absolute;top:50%;right:0;transform:translateY(-50%)}
+nav .gnb-menu>li:last-child>a:after {display:none;}
+
+nav .gnb-sns>li {display:inline-block;font-size:0.8rem;position:relative;}
+nav .gnb-sns>li>a {padding:0 1rem 0 1rem;font-size:0.8rem;line-height:5rem;position:relative;}
+nav .gnb-sns>li>a:after {content:"";display:block;width:1px;height:12px;background:#999;position:absolute;top:50%;right:0;transform:translateY(-50%)}
+nav .gnb-sns>li:last-child>a:after {display:none;}
+nav .gnb-sns>li:last-child>a {padding:0 0 0 1rem;}
+
+nav .gnb-menu>li .gnb-submenu {display:none;position:absolute;top:4rem;left:50%;transform:translateX(-50%);border:1px solid #ddd;background:#fff;z-index:222;}
+nav .gnb-menu>li:hover .gnb-submenu {display:block;}
+
+
+nav ul .gnb-submenu:before {content:"";display:block;width:20px;height:20px;background:#fff;border:1px solid #ddd;position:absolute;top:-0.2rem;left:50%;transform:translateX(-50%) rotate(45deg);}
+nav ul .gnb-submenu>li a {display:block;text-align:center;line-height:1.5rem;padding:0 2rem;border-bottom:1px solid #ddd;background:#fff;position:relative;}
+nav ul .gnb-submenu>li:last-child a {border-bottom:none;}
+
+.section {padding:5rem 0;text-align:center;}
+.section h2 {margin:0 0 0.5rem 0;font-size:1.5rem;font-weight:500;}
+.section p {margin:0 0 1rem 0;font-size:0.7rem;font-weight:300;}
+.section figure img {width:100%;}
+.section figure strong {display:block;margin:0.5rem 0 0.5rem 0;}
+.section figure a {display:block;width:150px;margin:0 auto;border:1px solid #333;border-radius:0.25rem;line-height:1.5rem;font-size:0.7rem}
+
+#main-visual {position:relative;height:calc(100vh - 7rem);background:#333;color:#fff;}
+#main-visual figure {height:calc(100vh - 7rem);transition:5s linear;}
+#main-visual figure.on {transform:scale(1.05);}
+#main-visual .visual_01 {background:url(../img/main_visual01.jpg) no-repeat center center/cover}
+#main-visual .visual_02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover}
+#main-visual .visual_03 {color:#fff;background:url(../img/main_visual03.jpg) no-repeat center center/cover}
+#main-visual .slogan-text {position:absolute;top:18rem;left:50%;padding:0 0.75rem;text-align:left;width:1200px;transform:translateX(-50%)}
+#main-visual h2 {margin:0 0 1rem 0;font-size:0;font-weight:900;height:2.5rem;overflow:hidden;}
+#main-visual figure p {line-height:1.25;font-weight:300;font-size:0.7rem;opacity:0;transform:translateY(3rem);transition:0.6s 1s}
+#main-visual figure.on p {opacity:1;transform:translateX(0)}
+
+#main-visual .slick-dots {position:absolute;bottom:2rem;width:100%;text-align:center;font-size:0;}
+#main-visual .slick-dots button {display:none;}
+#main-visual .slick-dots li {display:inline-block;width:5rem;height:0.25rem;background:#f2f2f2;margin:0 0.25rem;cursor:pointer;}
+#main-visual .slick-dots li.on {background:#f00}
+
+#main-visual i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:3rem;font-weight:100;padding:1rem;background:rgba(0,0,0,0.4);cursor:pointer;z-index:333;}
+#main-visual i.xi-angle-left-thin {margin-left:-35rem;}
+#main-visual i.xi-angle-right-thin {margin-left:35rem;}
+
+#content01 {background:#fff;}
+#content01 figure {float:left;width:33.3333333%;padding:0 0.75rem;}
+
+#event {background:#f2f2f2;}
+#event figure {float:left;width:50%;padding:0 0.75rem;}
+
+footer {padding:2.5rem 0;border-top:1px solid #ddd;}
+footer address, footer .sns, footer .link {float:left;padding:0 0.75rem;}
+
+footer address {width:60%;font-size:0.7rem;line-height: 1.25;}
+footer .link {width:20%;text-align:right}
+footer .sns {width:20%;text-align:right}
+footer .link select {padding:0 1rem;background:#333;color:#fff;}
+footer .sns i {padding:0.2rem;background:#333;font-size:1.3rem;color:#f2f2f2;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
